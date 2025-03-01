@@ -40,14 +40,17 @@ const StyledLinks = styled.nav`
       justify-content: center;
       align-items: center;
       position: absolute;
-      top: 100px;
+      top: 118px;
       left: 0;
       width: 100%;
       height: calc(100vh - 100px);
-      background-color: rgba(0, 0, 0, 1);
-      border-top: 1px solid #c9453b;
+      background-color: black; /* Затемнение */
+      backdrop-filter: blur(10px); /* Размытие */
       li {
         margin: 30px 0;
+        a {
+          font-size: 32px;
+        }
       }
     }
   }

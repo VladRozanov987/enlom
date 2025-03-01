@@ -27,6 +27,11 @@ const GlobalStyle = createGlobalStyle`
     justify-content: space-between;
   }
 
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+
   .d-grid {
     display: grid;
     gap: 30px;

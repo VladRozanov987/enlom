@@ -40,7 +40,7 @@ const Services = () => {
 };
 
 const StyledServices = styled.section`
-  padding: 350px 80px;
+  padding: 300px 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${secBg});
   background-position: center center;

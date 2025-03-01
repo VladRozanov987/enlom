@@ -10,17 +10,23 @@ import Main from "./pages/main/Main.page";
 import Partners from "./pages/partners/Partners.page";
 import Contacts from "./pages/contacts/Contacts.page";
 import Header from "./components/header/Header.component";
+import Footer from "./components/footer/Footer.component";
+import ScrollToTop from "./hooks/ScrollToTop";
 
 function App() {
   return (
     <Router>
-      <GlobalStyle />
-      <Header />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/partners" element={<Partners />} />
-        <Route path="/contacts" element={<Contacts />} />
-      </Routes>
+      <ScrollToTop />
+      <div className="app">
+        <GlobalStyle />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/contacts" element={<Contacts />} />
+        </Routes>
+      </div>
+      <Footer />
     </Router>
   );
 }
