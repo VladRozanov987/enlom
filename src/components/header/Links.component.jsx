@@ -17,7 +17,9 @@ const Links = (props) => {
         <li onClick={() => props.isMobile && props.closeMobMenu()}>
           <Link to="contacts">Контакти</Link>
         </li>
-        <button>Зв'яжіться з нами</button>
+        <button>
+          <a href="mailto:enlombg@gmail.com">Зв'яжіться з нами</a>
+        </button>
       </ul>
     </StyledLinks>
   );

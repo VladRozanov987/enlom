@@ -14,6 +14,12 @@ const Footer = () => {
             <img className="logo-img" src={enlom} alt="logo" />
             <h4 className="footer-text">© 2025 Enlom</h4>
           </div>
+          <div className="numbers-wrapper">
+            <p>Наші Номера</p>
+            <a href="tel:+359885028098">+359 88 502 8098</a>
+            <a href="tel:+380505581181">+380 50 558 1181</a>
+            <a href="tel:+380685836843">+380 68 583 6843</a>
+          </div>
           <div className="links-wrapper">
             <ul>
               <li>
@@ -25,10 +31,9 @@ const Footer = () => {
               <li>
                 <Link to="contacts">Контакти</Link>
               </li>
-              <li>
-                {" "}
-                <button className="footer-btn">Зв'яжіться з нами</button>{" "}
-              </li>
+              <button className="footer-btn">
+                <a href="mailto:enlombg@gmail.com">Зв'яжіться з нами</a>
+              </button>
             </ul>
           </div>
         </div>
@@ -53,17 +58,20 @@ const StyledFooter = styled.footer`
     margin-top: 12px;
   }
 
+  .numbers-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   .links-wrapper {
     ul {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      li:not(:last-child) {
-        margin-right: 40px;
-      }
     }
-    .footer-btn {
-      padding: 14px 35px;
-    }
+  }
+  .footer-btn {
+    padding: 14px 35px;
   }
 
   @media screen and (max-width: 928px) {
@@ -87,12 +95,14 @@ const StyledFooter = styled.footer`
   }
 
   @media screen and (max-width: 768px) {
+    .d-flex {
+      flex-direction: column-reverse;
+    }
     .logo-img {
       max-width: 130px;
     }
     .links-wrapper {
       ul {
-        flex-direction: column;
         li {
           margin-right: 0;
           margin: 4px 0;
@@ -101,6 +111,13 @@ const StyledFooter = styled.footer`
           margin-right: 0;
         }
       }
+    }
+
+    .logo-wrapper,
+    .numbers-wrapper,
+    .links-wrapper {
+      padding: 12px;
+      text-align: center;
     }
   }
 `;

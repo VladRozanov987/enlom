@@ -18,6 +18,20 @@ const ContactsInfo = () => {
             Район: ЖК Сонячний Берег-Захід, Вулиця/бульвар: комплекс Віла
             Валенсія, поверх 3, <span>квартира А45</span>
           </p>
+          <p className="text">
+            <span>Електронна пошта:</span>{" "}
+            <a href="mailto:enlombg@gmail.com"></a>
+            enlombg@gmail.com
+          </p>
+          <div className="numbers-wrapper">
+            <p className="text">
+              {" "}
+              <span>Наші Номера</span>
+            </p>
+            <a href="tel:+359885028098">+359 88 502 8098</a>
+            <a href="tel:+380505581181">+380 50 558 1181</a>
+            <a href="tel:+380685836843">+380 68 583 6843</a>
+          </div>
         </div>
       </StyledContactsInfo>
       <iframe
@@ -44,6 +58,12 @@ const StyledContactsInfo = styled.section`
       font-size: 32px;
       color: #c9453b;
     }
+  }
+
+  .numbers-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
   .text:not(:last-child) {
