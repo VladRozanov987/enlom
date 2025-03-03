@@ -17,8 +17,8 @@ const Links = (props) => {
         <li onClick={() => props.isMobile && props.closeMobMenu()}>
           <Link to="contacts">Контакти</Link>
         </li>
+        <button>Зв'яжіться з нами</button>
       </ul>
-      <button>Зв'яжіться з нами</button>
     </StyledLinks>
   );
 };
@@ -26,13 +26,16 @@ const Links = (props) => {
 const StyledLinks = styled.nav`
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   @media screen and (max-width: 768px) {
     align-items: center;
     flex-direction: column;
     button {
-      display: none;
+      display: block;
+      font-size: 24px;
+      padding: 12px;
+      margin: 25px 0;
     }
     ul {
       display: flex;
@@ -40,14 +43,14 @@ const StyledLinks = styled.nav`
       justify-content: center;
       align-items: center;
       position: absolute;
-      top: 118px;
+      top: 0;
       left: 0;
       width: 100%;
-      height: calc(100vh - 100px);
-      background-color: black; /* Затемнение */
-      backdrop-filter: blur(10px); /* Размытие */
+      height: 100vh;
+      background-color: #776355;
+      backdrop-filter: blur(10px);
       li {
-        margin: 30px 0;
+        margin: 25px 0;
         a {
           font-size: 32px;
         }

@@ -40,6 +40,17 @@ const StyledSecondary = styled.section`
   .text:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  @media screen and (max-width: 928px) {
+    padding: 40px 0;
+    .text {
+      font-size: 24px;
+
+      span {
+        font-size: 32px;
+      }
+    }
+  }
 `;
 
 export default Secondary;

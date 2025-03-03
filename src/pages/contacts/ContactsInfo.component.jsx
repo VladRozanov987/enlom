@@ -24,9 +24,9 @@ const ContactsInfo = () => {
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2753.592349033835!2d27.701933688837993!3d42.6891361306777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a69e54fae529dd%3A0x2ff119e7c3af75bc!2sVilla%20Valencia!5e0!3m2!1sen!2sua!4v1740843836057!5m2!1sen!2sua"
         width="100%"
         height="500"
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </>
   );
@@ -48,6 +48,10 @@ const StyledContactsInfo = styled.section`
 
   .text:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 928px) {
+    padding: 40px 0;
   }
 `;
 

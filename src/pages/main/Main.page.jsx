@@ -42,6 +42,12 @@ const StyledMain = styled.div`
       color: #c9453b;
     }
   }
+
+  @media screen and (max-width: 928px) {
+    h1 {
+      font-size: 44px;
+    }
+  }
 `;
 
 export default Main;

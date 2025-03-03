@@ -59,7 +59,7 @@ const Burger = styled.div`
   span {
     width: 100%;
     height: 3px;
-    background: black;
+    background: white;
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
   }
@@ -88,13 +88,13 @@ const MobileMenu = styled.div`
   align-items: center;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-20px);
+  transform: translateX(200px);
   transition: all 0.5s ease-in-out;
 
   &.open {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 `;
 

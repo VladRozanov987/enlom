@@ -1,18 +1,22 @@
 import styled from "styled-components";
 import mainBg from "../../assets/img/MainBg.jpg";
+import PartnersSection from "./PartnersSection.component";
 
 const Partners = () => {
   return (
-    <StyledPartners>
-      <div className="container">
-        <div className="partners-title">
-          <h1>
-            {" "}
-            <span>Наші</span> партнери
-          </h1>
+    <>
+      <StyledPartners>
+        <div className="container">
+          <div className="partners-title">
+            <h1>
+              {" "}
+              <span>Наші</span> партнери
+            </h1>
+          </div>
         </div>
-      </div>
-    </StyledPartners>
+      </StyledPartners>
+      <PartnersSection />
+    </>
   );
 };
 
@@ -25,11 +29,6 @@ const StyledPartners = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  .container {
-    display: flex;
-    justify-content: center;
-  }
-
   .partners-title {
     position: absolute;
     top: 70%;
@@ -37,6 +36,20 @@ const StyledPartners = styled.div`
 
     span {
       color: #c9453b;
+    }
+  }
+
+  @media screen and (max-width: 928px) {
+    .partners-title {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      max-width: 500px;
+      transform: translateX(-50%);
+    }
+    h1 {
+      text-align: center;
+      font-size: 44px;
     }
   }
 `;

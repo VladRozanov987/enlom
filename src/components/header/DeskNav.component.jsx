@@ -12,13 +12,10 @@ const DeskNav = () => {
 };
 
 const LinkList = styled.div`
-  width: 67%;
-  display: flex;
-  justify-content: space-between;
   ul {
     display: flex;
     align-items: center;
-    li:not(:last-child) {
+    li {
       margin-right: 40px;
     }
   }
@@ -27,12 +24,18 @@ const LinkList = styled.div`
     padding: 14px 35px;
   }
 
-  @media screen and (max-width: 1235px) {
-    width: 72%;
-  }
-
-  @media screen and (max-width: 1100px) {
-    width: 77%;
+  @media screen and (max-width: 928px) {
+    ul {
+      li {
+        margin-right: 20px;
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+    button {
+      font-size: 14px;
+    }
   }
 
   @media screen and (max-width: 768px) {

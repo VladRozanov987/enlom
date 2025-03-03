@@ -29,11 +29,6 @@ const StyledContacts = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  .container {
-    display: flex;
-    justify-content: center;
-  }
-
   .contacts-title {
     position: absolute;
     top: 70%;
@@ -41,6 +36,20 @@ const StyledContacts = styled.div`
 
     span {
       color: #c9453b;
+    }
+  }
+
+  @media screen and (max-width: 928px) {
+    .contacts-title {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      max-width: 500px;
+      transform: translateX(-50%);
+    }
+    h1 {
+      text-align: center;
+      font-size: 44px;
     }
   }
 `;

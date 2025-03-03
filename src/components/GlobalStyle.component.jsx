@@ -21,34 +21,9 @@ const GlobalStyle = createGlobalStyle`
     justify-content: space-between;
   }
 
-  .d-flex-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   .no-scroll {
     overflow: hidden;
     height: 100vh;
-  }
-
-  .d-grid {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
-    @media screen and (max-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
-    }
-    @media screen and (max-width: 800px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media screen and (max-width: 500px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-
-  img {
-    border-radius: 10px 10px 0 0;
   }
 
   ul {
@@ -58,7 +33,6 @@ const GlobalStyle = createGlobalStyle`
       font-family: 'Rubik', serif;
       font-style: normal;
       line-height: 120%;
-      padding: 8px;
     }
   }
 
@@ -142,20 +116,11 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  .mySwiper {
-    min-height: calc(32vh + 120px);
-}
-
-  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: var(--swiper-pagination-bottom, 0px);
-    top: var(--swiper-pagination-top,auto);
-    left: 0;
-    width: 100%;
+  @media screen and (max-width: 1100px) {
+    .container {
+      padding: 0;
+    }
   }
-
-  .swiper-wrapper{
-  transition-timing-function : linear;
-}
 `;
 
 export default GlobalStyle;
