@@ -3,6 +3,11 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+:root {
+    --yellow: #ffff00;
+    --blue: #88c3fb;
+  }
+
   * {
     margin: 0;
     padding: 0;
