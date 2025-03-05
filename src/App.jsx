@@ -13,6 +13,9 @@ import Header from "./components/header/Header.component";
 import Footer from "./components/footer/Footer.component";
 import ScrollToTop from "./hooks/ScrollToTop";
 
+// i18n
+import "./i18n";
+
 function App() {
   return (
     <Router>

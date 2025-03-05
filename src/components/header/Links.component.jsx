@@ -4,21 +4,26 @@ import styled from "styled-components";
 // Router
 import { Link } from "react-router-dom";
 
+// i18n
+import { useTranslation } from "react-i18next";
+
 const Links = (props) => {
+  const { t } = useTranslation();
+
   return (
     <StyledLinks>
       <ul>
         <li onClick={() => props.isMobile && props.closeMobMenu()}>
-          <Link to="/">Головна</Link>
+          <Link to="/">{t("nav.home")}</Link>
         </li>
         <li onClick={() => props.isMobile && props.closeMobMenu()}>
-          <Link to="partners">Партнери</Link>
+          <Link to="partners">{t("nav.partners")}</Link>
         </li>
         <li onClick={() => props.isMobile && props.closeMobMenu()}>
-          <Link to="contacts">Контакти</Link>
+          <Link to="contacts">{t("nav.contacts")}</Link>
         </li>
         <button>
-          <a href="mailto:enlombg@gmail.com">Зв'яжіться з нами</a>
+          <a href="mailto:enlombg@gmail.com">{t("nav.contact_us")}</a>
         </button>
       </ul>
     </StyledLinks>

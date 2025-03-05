@@ -10,6 +10,7 @@ import enlom from "../../assets/icons/Logo.png";
 
 // Router
 import { Link } from "react-router-dom";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 const Header = () => {
   return (
@@ -22,6 +23,7 @@ const Header = () => {
           <DeskNav />
           <MobNav />
         </div>
+        <LanguageSwitcher />
       </div>
     </StyledHeader>
   );

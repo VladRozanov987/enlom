@@ -61,6 +61,10 @@ const StyledFooter = styled.footer`
   .numbers-wrapper {
     display: flex;
     flex-direction: column;
+    p,
+    a {
+      padding: 4px 0;
+    }
   }
 
   .links-wrapper {
@@ -68,6 +72,9 @@ const StyledFooter = styled.footer`
       display: flex;
       flex-direction: column;
       align-items: center;
+      li {
+        padding: 4px 0;
+      }
     }
   }
   .footer-btn {

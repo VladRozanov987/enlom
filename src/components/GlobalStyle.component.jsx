@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
     --yellow: #ffff00;
@@ -86,8 +85,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: 18px;
     line-height: 150%;
     color: #FFFFFF;
-    transition: all 0.4s;
-  }
+    position: relative;
+    transition: color 0.4s;
+}
 
   p {
     font-family: 'Rubik';
