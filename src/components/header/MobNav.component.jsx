@@ -47,7 +47,7 @@ const StyledMobileNav = styled.div`
 
 const Burger = styled.div`
   width: 35px;
-  height: 30px;
+  height: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,7 +58,7 @@ const Burger = styled.div`
 
   span {
     width: 100%;
-    height: 3px;
+    height: 2px;
     background: white;
     border-radius: 2px;
     transition: all 0.3s ease-in-out;

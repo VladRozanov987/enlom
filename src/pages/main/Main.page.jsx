@@ -35,7 +35,7 @@ const StyledMain = styled.div`
 
   .main-title {
     position: absolute;
-    top: 60%;
+    top: 65%;
     max-width: 500px;
 
     span {

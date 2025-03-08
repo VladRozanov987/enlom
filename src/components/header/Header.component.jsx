@@ -21,9 +21,10 @@ const Header = () => {
             <img className="logo-img" src={enlom} alt="logo" />
           </Link>
           <DeskNav />
+          <LanguageSwitcher />
+
           <MobNav />
         </div>
-        <LanguageSwitcher />
       </div>
     </StyledHeader>
   );
@@ -48,6 +49,13 @@ const StyledHeader = styled.header`
 
   .logo-img {
     max-width: 200px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 10px 0;
+    .logo-img {
+      max-width: 100px;
+    }
   }
 `;
 

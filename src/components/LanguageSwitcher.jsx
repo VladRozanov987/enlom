@@ -29,7 +29,7 @@ const Select = styled.select`
   cursor: pointer;
   outline: none;
   border: none;
-  margin-left: 12px;
+  margin-left: 8px;
 
   &:hover {
     border-color: #666;
