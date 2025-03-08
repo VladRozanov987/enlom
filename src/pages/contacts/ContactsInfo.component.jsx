@@ -20,7 +20,7 @@ const ContactsInfo = () => {
           </p>
           <p className="text">
             <span>Електронна пошта:</span>{" "}
-            <a href="mailto:enlombg@gmail.com"></a>
+            <a href="mailto:enlombg@gmail.com">enlombg@gmail.com</a>
             enlombg@gmail.com
           </p>
           <div className="numbers-wrapper">
@@ -41,6 +41,7 @@ const ContactsInfo = () => {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        title="Villa Valencia"
       ></iframe>
     </>
   );
