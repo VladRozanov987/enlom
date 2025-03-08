@@ -21,7 +21,6 @@ const ContactsInfo = () => {
           <p className="text">
             <span>Електронна пошта:</span>{" "}
             <a href="mailto:enlombg@gmail.com">enlombg@gmail.com</a>
-            enlombg@gmail.com
           </p>
           <div className="numbers-wrapper">
             <p className="text">
