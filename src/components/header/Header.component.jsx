@@ -32,13 +32,13 @@ const Header = () => {
 
 const StyledHeader = styled.header`
   width: 100%;
-  padding: 30px 0;
+  padding: 20px 0;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
 
   .links {
     width: 100%;

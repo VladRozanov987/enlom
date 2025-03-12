@@ -1,5 +1,10 @@
+// Styled
 import styled from "styled-components";
-import mainBg from "../../assets/img/MainBg.jpg";
+
+// IMG
+import mainBg from "../../assets/img/main.jpg";
+
+// Components
 import ContactsInfo from "./ContactsInfo.component";
 
 const Contacts = () => {
@@ -23,9 +28,9 @@ const Contacts = () => {
 const StyledContacts = styled.div`
   height: 100vh;
   padding-top: 120px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${mainBg});
-  background-position: center center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
 
