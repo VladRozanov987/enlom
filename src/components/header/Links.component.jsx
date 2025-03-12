@@ -54,7 +54,7 @@ const StyledLinks = styled.nav`
       left: 0;
       width: 100%;
       height: 100vh;
-      background-color: #776355;
+      background-color: #828fa6;
       backdrop-filter: blur(10px);
       li {
         margin: 25px 0;

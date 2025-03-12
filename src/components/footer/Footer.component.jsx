@@ -44,7 +44,7 @@ const Footer = () => {
 
 const StyledFooter = styled.footer`
   padding: 40px 0;
-  background: #2e2e2e;
+  background: #4b4b4b;
 
   .d-flex {
     align-items: center;

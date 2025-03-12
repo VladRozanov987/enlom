@@ -149,7 +149,7 @@ const StyledSection = styled.section`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
-    gap: 50px;
+    gap: 48px;
   }
 
   .card {
@@ -186,10 +186,17 @@ const StyledSection = styled.section`
     transform: scale(1.05);
   }
 
+  @media screen and (max-width: 1256px) {
+    .card-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+  }
+
   @media screen and (max-width: 928px) {
     padding: 40px 0;
     .card-wrapper {
-      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
       gap: 24px;
     }
     .card {
