@@ -4,33 +4,35 @@ import styled from "styled-components";
 // IMG
 import secBg from "../../assets/img/secBg.jpg";
 
+// Translation
+import { useTranslation } from "react-i18next";
+
 const Services = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledServices>
       <div className="container">
         <div className="list-wrapper">
           <div className="list-item">
-            <h4 className="title">Наші Послуги</h4>
+            <h4 className="title">{t("services.title")}</h4>
             <ul className="list">
-              <li className="text">⚙️ Продаж авіаційних запасних частин</li>
-              <li className="text">⚙️ Постачання авіаційного обладнання</li>
-              <li className="text">⚙️ Консультації щодо вибору деталей</li>
-              <li className="text">⚙️ Логістика та доставка</li>
-              <li className="text">⚙️ Гарантійне обслуговування</li>
+              <li className="text">⚙️ {t("services.items.0")}</li>
+              <li className="text">⚙️ {t("services.items.1")}</li>
+              <li className="text">⚙️ {t("services.items.2")}</li>
+              <li className="text">⚙️ {t("services.items.3")}</li>
+              <li className="text">⚙️ {t("services.items.4")}</li>
             </ul>
           </div>
           <div className="list-item">
-            <h4 className="title">Чому обирають нас</h4>
+            <h4 className="title">{t("services.why_us_title")}</h4>
             <ul className="list">
-              <li className="text">
-                ⚙️ Широкий асортимент сертифікованих деталей
-              </li>
-              <li className="text">⚙️ Партнерство з провідними виробниками</li>
-              <li className="text">⚙️ Конкурентні ціни</li>
-              <li className="text">
-                ⚙️ Індивідуальний підхід до кожного клієнта
-              </li>
-              <li className="text">⚙️ Оперативна доставка по всьому світу</li>
+              <li className="text">⚙️ {t("services.why_us.0")}</li>
+              <li className="text">⚙️ {t("services.why_us.1")}</li>
+              <li className="text">⚙️ {t("services.why_us.2")}</li>
+              <li className="text">⚙️ {t("services.why_us.3")}</li>
+              <li className="text">⚙️ {t("services.why_us.4")}</li>
+              <li className="text">⚙️ {t("services.why_us.5")}</li>
             </ul>
           </div>
         </div>

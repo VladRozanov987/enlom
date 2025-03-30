@@ -5,7 +5,12 @@ import styled from "styled-components";
 import enlom from "../../assets/icons/Logo.png";
 import { Link } from "react-router-dom";
 
+// Translation
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledFooter>
       <div className="container">
@@ -15,7 +20,7 @@ const Footer = () => {
             <h4 className="footer-text">© 2025 Enlom</h4>
           </div>
           <div className="numbers-wrapper">
-            <p>Наші Номера</p>
+            <p>{t("contacts.our_numbers")}</p>
             <a href="tel:+359885028098">+359 88 502 8098</a>
             <a href="tel:+380505581181">+380 50 558 1181</a>
             <a href="tel:+380685836843">+380 68 583 6843</a>
@@ -23,16 +28,16 @@ const Footer = () => {
           <div className="links-wrapper">
             <ul>
               <li>
-                <Link to="/">Головна</Link>
+                <Link to="/">{t("nav.home")}</Link>
               </li>
               <li>
-                <Link to="partners">Партнери</Link>
+                <Link to="partners">{t("nav.partners")}</Link>
               </li>
               <li>
-                <Link to="contacts">Контакти</Link>
+                <Link to="contacts">{t("nav.contacts")}</Link>
               </li>
               <button className="footer-btn">
-                <a href="mailto:enlombg@gmail.com">Зв'яжіться з нами</a>
+                <a href="mailto:enlombg@gmail.com">{t("nav.contact_us")}</a>
               </button>
             </ul>
           </div>

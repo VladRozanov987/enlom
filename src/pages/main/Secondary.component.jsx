@@ -1,22 +1,21 @@
 // Styled
 import styled from "styled-components";
 
+// Translation
+import { useTranslation } from "react-i18next";
+
 const Secondary = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledSecondary>
       <div className="container">
         <p className="text">
-          <span>Ми</span> пишаємося своєю репутацією надійного постачальника,
-          який забезпечує високоякісні рішення для авіаційної галузі. Наш
-          пріоритет — задоволення потреб клієнтів та надійність продукції.
+          <span>{t("secondary.we")}</span> {t("secondary.reputation")}
         </p>
+        <p className="text">{t("secondary.contact")}</p>
         <p className="text">
-          Готові до співпраці? Зв'яжіться з нами для отримання детальної
-          інформації про наші послуги.
-        </p>
-        <p className="text">
-          {" "}
-          <span>Разом</span> ми забезпечуємо надійність польотів!
+          <span>{t("main.together")}</span> {t("main.reliability")}
         </p>
       </div>
     </StyledSecondary>

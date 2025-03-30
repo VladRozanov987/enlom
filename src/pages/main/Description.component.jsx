@@ -1,16 +1,17 @@
+// Styled
 import styled from "styled-components";
 
+// Translation
+import { useTranslation } from "react-i18next";
+
 const Description = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledDes>
       <div className="container">
-        <h3 className="title">Про компанію</h3>
-        <p className="text">
-          Ласкаво просимо до ENLOM — вашого надійного партнера у сфері продажу
-          авіаційних деталей та техніки. Наша компанія базується в Болгарії, але
-          ми відкриті до співпраці в міжнародному форматі, пропонуючи якісні
-          рішення для авіаційної галузі по всьому світу.
-        </p>
+        <h3 className="title">{t("description.title")}</h3>
+        <p className="text">{t("description.text")}</p>
       </div>
     </StyledDes>
   );

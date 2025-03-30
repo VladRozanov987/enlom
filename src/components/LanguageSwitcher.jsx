@@ -3,41 +3,78 @@ import styled from "styled-components";
 
 // i18n
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
 
-  const changeLanguage = (event) => {
-    i18n.changeLanguage(event.target.value);
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    setIsOpen(false);
   };
 
   return (
-    <Select onChange={changeLanguage} value={i18n.language}>
-      <option value="ua">🇺🇦</option>
-      <option value="en">🇬🇧</option>
-      <option value="bg">🇧🇬</option>
-    </Select>
+    <Dropdown
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
+      <CurrentLanguage>{getFlag(i18n.language)}</CurrentLanguage>
+      {isOpen && (
+        <DropdownMenu>
+          <DropdownItem onClick={() => changeLanguage("ua")}>
+            🇺🇦 Українська
+          </DropdownItem>
+          <DropdownItem onClick={() => changeLanguage("en")}>
+            🇬🇧 English
+          </DropdownItem>
+          <DropdownItem onClick={() => changeLanguage("bg")}>
+            🇧🇬 Български
+          </DropdownItem>
+        </DropdownMenu>
+      )}
+    </Dropdown>
   );
 };
 
-const Select = styled.select`
-  padding: 5px 10px;
+const getFlag = (lang) => {
+  const flags = { ua: "🇺🇦", en: "🇬🇧", bg: "🇧🇬" };
+  return flags[lang] || "🌍";
+};
+
+const Dropdown = styled.div`
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+`;
+
+const CurrentLanguage = styled.div`
   font-size: 24px;
+  padding: 5px 10px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
+`;
+
+const DropdownMenu = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+`;
+
+const DropdownItem = styled.div`
+  padding: 10px 15px;
+  font-size: 18px;
+  color: white;
+  white-space: nowrap;
   cursor: pointer;
-  outline: none;
-  border: none;
-  margin-left: 8px;
 
   &:hover {
-    border-color: #666;
-  }
-
-  option {
-    background-color: black;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
   }
 `;
 

@@ -9,7 +9,12 @@ import Description from "./Description.component";
 import Services from "./Services.component";
 import Secondary from "./Secondary.component";
 
+//translation
+import { useTranslation } from "react-i18next";
+
 const Main = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <StyledMain>
@@ -17,7 +22,7 @@ const Main = () => {
           <div className="main-title">
             <h1>
               {" "}
-              <span>Разом</span> ми забезпечуємо надійність польотів!
+              <span>{t("main.together")}</span> {t("main.reliability")}
             </h1>
           </div>
         </div>
@@ -34,7 +39,7 @@ const StyledMain = styled.div`
   padding-top: 120px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${mainBg});
-  background-position: left;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 

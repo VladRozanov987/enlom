@@ -7,7 +7,12 @@ import mainBg from "../../assets/img/main.jpg";
 // Components
 import ContactsInfo from "./ContactsInfo.component";
 
+// Translation
+import { useTranslation } from "react-i18next";
+
 const Contacts = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <StyledContacts>
@@ -15,7 +20,7 @@ const Contacts = () => {
           <div className="contacts-title">
             <h1>
               {" "}
-              <span>Наші</span> контакти
+              <span>{t("contacts.our")}</span> {t("contacts.title")}
             </h1>
           </div>
         </div>
@@ -30,7 +35,7 @@ const StyledContacts = styled.div`
   padding-top: 120px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${mainBg});
-  background-position: left;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 

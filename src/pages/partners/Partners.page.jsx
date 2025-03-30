@@ -7,15 +7,19 @@ import mainBg from "../../assets/img/main.jpg";
 // Components
 import PartnersSection from "./PartnersSection.component";
 
+// Translation
+import { useTranslation } from "react-i18next";
+
 const Partners = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <StyledPartners>
         <div className="container">
           <div className="partners-title">
             <h1>
-              {" "}
-              <span>Наші</span> партнери
+              <span>{t("partners.our")}</span> {t("partners.title")}
             </h1>
           </div>
         </div>
@@ -30,7 +34,7 @@ const StyledPartners = styled.div`
   padding-top: 120px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${mainBg});
-  background-position: left;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 

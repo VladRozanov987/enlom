@@ -1,35 +1,39 @@
 // Styled
 import styled from "styled-components";
 
+// Translation
+import { useTranslation } from "react-i18next";
+
 const ContactsInfo = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <StyledContactsInfo>
         <div className="container">
           <p className="text">
-            <span>Адреса:</span>
+            <span>{t("contacts.addresses")}</span>
           </p>
           <p className="text">
-            Країна: БОЛГАРІЯ, Область: Бургас, Громада: Несебр, Населений пункт:
-            м. Несебр
+            {t("contacts.country")}, {t("contacts.region")},{" "}
+            {t("contacts.municipality")}, {t("contacts.city")}
           </p>
-          <p className="text">Поштовий індекс 8240</p>
+          <p className="text">{t("contacts.postal_code")}</p>
           <p className="text">
-            Район: ЖК Сонячний Берег-Захід, Вулиця/бульвар: комплекс Віла
-            Валенсія, поверх 3, <span>квартира А45</span>
+            {t("contacts.district")}, {t("contacts.street")}
           </p>
           <p className="text">
-            <span>Електронна пошта:</span>{" "}
+            <span>{t("contacts.email")}</span>{" "}
             <a href="mailto:enlombg@gmail.com">enlombg@gmail.com</a>
           </p>
           <div className="numbers-wrapper">
             <p className="text">
               {" "}
-              <span>Наші Номера</span>
+              <span>{t("contacts.our_numbers")}</span>
             </p>
-            <a href="tel:+359885028098">+359 88 502 8098</a>
-            <a href="tel:+380505581181">+380 50 558 1181</a>
-            <a href="tel:+380685836843">+380 68 583 6843</a>
+            <a href="tel:+359885028098">{t("contacts.phone_1")}</a>
+            <a href="tel:+380505581181">{t("contacts.phone_2")}</a>
+            <a href="tel:+380685836843">{t("contacts.phone_3")}</a>
           </div>
         </div>
       </StyledContactsInfo>

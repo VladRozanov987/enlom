@@ -4,5 +4,101 @@
     "partners": "Partners",
     "contacts": "Contacts",
     "contact_us": "Contact us"
+  },
+  "main": {
+    "together": "Together",
+    "reliability": "we ensure flight reliability!"
+  },
+  "description": {
+    "title": "About Us",
+    "text": "Welcome to ENLOM — your trusted partner in aviation parts and equipment sales. Based in Bulgaria, we are open to international collaborations, providing high-quality solutions for the aviation industry worldwide."
+  },
+  "services": {
+    "title": "Our Services",
+    "items": [
+      "Sales of aviation spare parts",
+      "Supply of aviation equipment",
+      "Expert advice on parts selection",
+      "Logistics and delivery",
+      "Warranty services"
+    ],
+    "why_us_title": "Why Choose Us",
+    "why_us": [
+      "A wide range of certified parts",
+      "Partnerships with leading manufacturers",
+      "Competitive prices",
+      "Personalized approach to each client",
+      "Fast worldwide delivery",
+      "A certified and qualified team with extensive industry experience"
+    ]
+  },
+  "secondary": {
+    "we": "We",
+    "reputation": "take pride in our reputation as a reliable supplier, delivering high-quality solutions for the aviation industry. Our priority is customer satisfaction and the dependability of our products.",
+    "contact": "Ready to collaborate? Get in touch with us for more information about our services."
+  },
+  "partners": {
+    "our": "Our",
+    "title": "partners"
+  },
+  "partners_section": {
+    "fed": {
+      "title": "FED",
+      "description": "FED is a leading manufacturer of precision equipment and components used in aviation, space, and other industrial sectors. Thanks to our collaboration, clients in Bulgaria gain access to advanced technologies, reliable equipment, and professional support."
+    },
+    "aviagrade": {
+      "title": "Avia Grade",
+      "description": "Avia Grade is a recognized leader in the aviation equipment and technological solutions sector, offering innovative products for the aviation industry. Through our partnership, we provide reliable supply, technical support, and consulting services to clients in Bulgaria."
+    },
+    "terem": {
+      "title": "«TEREM-HOLDING» EAD",
+      "description": "A state-owned company of the Bulgarian Ministry of Defense, specializing in the repair, modernization, and logistical support of aviation equipment, ships, armored vehicles, firearms, artillery and missile systems, ammunition, radar, and communication equipment."
+    },
+    "lotn": {
+      "title": "Letecké opravovne Trenčín, a.s. (LOTN)",
+      "description": "A company offering maintenance, repair, and modernization services for both aircraft and helicopters in state and civilian aviation."
+    },
+    "aviabaltika": {
+      "title": "Aviabaltika Aviation Ltd.",
+      "description": "Specializes in the maintenance, repair, and modernization of helicopters in both state and civilian aviation sectors."
+    },
+    "spivdruzh": {
+      "title": "Spivdruzhnist Avia Bud LTD",
+      "description": "A company specializing in design, engineering, virtual modeling, the production of fiberglass and carbon fiber products, custom manufacturing, composite material repairs, fiberglass works, and painting services."
+    },
+    "h3o": {
+      "title": "H3Operations",
+      "description": "Specializes in Hot/High/Heavy transportation, with a particular focus on international peacekeeping, humanitarian, and special missions, as well as construction and installation works."
+    },
+    "fortop": {
+      "title": "FORTOP Sp. z o. o.",
+      "description": "A company focused on the procurement and sale of custom goods, providing logistics support, and implementing foreign trade contracts related to the supply of goods."
+    },
+    "haspet": {
+      "title": "Haspet (FZE)",
+      "description": "A company with extensive experience in the supply of aviation spare parts."
+    },
+    "aeroPartner": {
+      "title": "Aero Partner Ltd",
+      "description": "Specializes in the coordination, management, and consulting of projects in the defense industry, as well as the trade, import, and export of special-purpose goods and services, military equipment, spare parts, and components."
+    }
+  },
+  "contacts": {
+    "our": "Our",
+    "title": "contacts",
+    "addresses": "Address:",
+    "country": "Country: BULGARIA,",
+    "region": "Region: Burgas,",
+    "municipality": "Municipality: Nessebar,",
+    "city": "Locality: Nessebar,",
+    "postal_code": "postal code 8240,",
+    "district": " District: Sunny Beach-West",
+    "street": "Street/boulevard: Vila Valencia complex, floor 3.",
+    "email": "E-mail:",
+    "email_address": "enlombg@gmail.com",
+    "our_numbers": "Contact numbers",
+    "phone_1": "+359 88 502 8098",
+    "phone_2": "+380 50 558 1181",
+    "phone_3": "+380 68 583 6843"
   }
 }
