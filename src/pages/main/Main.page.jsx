@@ -12,15 +12,27 @@ import Secondary from "./Secondary.component";
 //translation
 import { useTranslation } from "react-i18next";
 
+// Animation
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Main = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <>
       <StyledMain>
         <div className="container">
           <div className="main-title">
-            <h1>
+            <h1 data-aos="fade-left" data-aos-duration="1000">
               {" "}
               <span>{t("main.together")}</span> {t("main.reliability")}
             </h1>

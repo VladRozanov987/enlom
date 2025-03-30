@@ -4,36 +4,69 @@ import styled from "styled-components";
 // Translation
 import { useTranslation } from "react-i18next";
 
+// Animation
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const ContactsInfo = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <>
       <StyledContactsInfo>
         <div className="container">
-          <p className="text">
+          <p data-aos="fade-up" data-aos-duration="1000" className="text">
             <span>{t("contacts.addresses")}</span>
           </p>
-          <p className="text">
+          <p data-aos="fade-up" data-aos-duration="1000" className="text">
             {t("contacts.country")}, {t("contacts.region")},{" "}
             {t("contacts.municipality")}, {t("contacts.city")}
           </p>
-          <p className="text">{t("contacts.postal_code")}</p>
-          <p className="text">
+          <p data-aos="fade-up" data-aos-duration="1000" className="text">
+            {t("contacts.postal_code")}
+          </p>
+          <p data-aos="fade-up" data-aos-duration="1000" className="text">
             {t("contacts.district")}, {t("contacts.street")}
           </p>
-          <p className="text">
+          <p data-aos="fade-up" data-aos-duration="1000" className="text">
             <span>{t("contacts.email")}</span>{" "}
             <a href="mailto:enlombg@gmail.com">enlombg@gmail.com</a>
           </p>
           <div className="numbers-wrapper">
-            <p className="text">
+            <p data-aos="fade-up" data-aos-duration="1000" className="text">
               {" "}
               <span>{t("contacts.our_numbers")}</span>
             </p>
-            <a href="tel:+359885028098">{t("contacts.phone_1")}</a>
-            <a href="tel:+380505581181">{t("contacts.phone_2")}</a>
-            <a href="tel:+380685836843">{t("contacts.phone_3")}</a>
+            <a
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              href="tel:+359885028098"
+            >
+              {t("contacts.phone_1")}
+            </a>
+            <a
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              href="tel:+380505581181"
+            >
+              {t("contacts.phone_2")}
+            </a>
+            <a
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              up
+              href="tel:+380685836843"
+            >
+              {t("contacts.phone_3")}
+            </a>
           </div>
         </div>
       </StyledContactsInfo>

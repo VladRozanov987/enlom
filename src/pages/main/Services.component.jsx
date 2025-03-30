@@ -7,14 +7,30 @@ import secBg from "../../assets/img/secBg.jpg";
 // Translation
 import { useTranslation } from "react-i18next";
 
+// Animation
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Services = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <StyledServices>
       <div className="container">
         <div className="list-wrapper">
-          <div className="list-item">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="list-item"
+          >
             <h4 className="title">{t("services.title")}</h4>
             <ul className="list">
               <li className="text">⚙️ {t("services.items.0")}</li>
@@ -24,7 +40,11 @@ const Services = () => {
               <li className="text">⚙️ {t("services.items.4")}</li>
             </ul>
           </div>
-          <div className="list-item">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="list-item"
+          >
             <h4 className="title">{t("services.why_us_title")}</h4>
             <ul className="list">
               <li className="text">⚙️ {t("services.why_us.0")}</li>

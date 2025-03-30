@@ -4,14 +4,30 @@ import styled from "styled-components";
 // Translation
 import { useTranslation } from "react-i18next";
 
+// Animation
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Description = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <StyledDes>
       <div className="container">
-        <h3 className="title">{t("description.title")}</h3>
-        <p className="text">{t("description.text")}</p>
+        <h3 data-aos="fade-up" data-aos-duration="1000" className="title">
+          {t("description.title")}
+        </h3>
+        <p data-aos="fade-up" data-aos-duration="1000" className="text">
+          {t("description.text")}
+        </p>
       </div>
     </StyledDes>
   );

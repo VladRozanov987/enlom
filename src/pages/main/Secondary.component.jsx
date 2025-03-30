@@ -4,17 +4,31 @@ import styled from "styled-components";
 // Translation
 import { useTranslation } from "react-i18next";
 
+// Animation
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Secondary = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <StyledSecondary>
       <div className="container">
-        <p className="text">
+        <p data-aos="fade-up" data-aos-duration="1000" className="text">
           <span>{t("secondary.we")}</span> {t("secondary.reputation")}
         </p>
-        <p className="text">{t("secondary.contact")}</p>
-        <p className="text">
+        <p data-aos="fade-up" data-aos-duration="1000" className="text">
+          {t("secondary.contact")}
+        </p>
+        <p data-aos="fade-up" data-aos-duration="1000" className="text">
           <span>{t("main.together")}</span> {t("main.reliability")}
         </p>
       </div>

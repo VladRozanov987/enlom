@@ -10,15 +10,27 @@ import PartnersSection from "./PartnersSection.component";
 // Translation
 import { useTranslation } from "react-i18next";
 
+// Animation
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Partners = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <>
       <StyledPartners>
         <div className="container">
           <div className="partners-title">
-            <h1>
+            <h1 data-aos="fade-left" data-aos-duration="1000">
               <span>{t("partners.our")}</span> {t("partners.title")}
             </h1>
           </div>
