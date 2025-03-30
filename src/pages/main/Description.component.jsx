@@ -22,10 +22,10 @@ const Description = () => {
   return (
     <StyledDes>
       <div className="container">
-        <h3 data-aos="fade-up" data-aos-duration="1000" className="title">
+        <h3 data-aos="fade-up" className="title">
           {t("description.title")}
         </h3>
-        <p data-aos="fade-up" data-aos-duration="1000" className="text">
+        <p data-aos="fade-up" className="text">
           {t("description.text")}
         </p>
       </div>

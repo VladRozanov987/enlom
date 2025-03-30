@@ -30,7 +30,7 @@ const Partners = () => {
       <StyledPartners>
         <div className="container">
           <div className="partners-title">
-            <h1 data-aos="fade-left" data-aos-duration="1000">
+            <h1 data-aos="fade-left">
               <span>{t("partners.our")}</span> {t("partners.title")}
             </h1>
           </div>

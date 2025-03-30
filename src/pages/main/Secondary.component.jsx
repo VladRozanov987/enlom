@@ -22,13 +22,13 @@ const Secondary = () => {
   return (
     <StyledSecondary>
       <div className="container">
-        <p data-aos="fade-up" data-aos-duration="1000" className="text">
+        <p data-aos="fade-up" className="text">
           <span>{t("secondary.we")}</span> {t("secondary.reputation")}
         </p>
-        <p data-aos="fade-up" data-aos-duration="1000" className="text">
+        <p data-aos="fade-up" className="text">
           {t("secondary.contact")}
         </p>
-        <p data-aos="fade-up" data-aos-duration="1000" className="text">
+        <p data-aos="fade-up" className="text">
           <span>{t("main.together")}</span> {t("main.reliability")}
         </p>
       </div>

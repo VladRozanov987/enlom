@@ -49,10 +49,9 @@ const PartnersSection = () => {
   ];
 
   useEffect(() => {
-    // Инициализируем AOS при загрузке компонента
     AOS.init({
-      duration: 1000, // продолжительность анимации
-      once: true, // анимация срабатывает только один раз
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -61,11 +60,7 @@ const PartnersSection = () => {
       <div className="container">
         <div className="card-wrapper">
           {partners.map((partner) => (
-            <div
-              className="card"
-              key={partner.key}
-              data-aos="fade-up" // Добавляем анимацию появления
-            >
+            <div className="card" key={partner.key} data-aos="fade-up">
               <a href={partner.link}>
                 <img
                   src={partner.img}

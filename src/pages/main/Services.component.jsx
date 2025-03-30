@@ -26,11 +26,7 @@ const Services = () => {
     <StyledServices>
       <div className="container">
         <div className="list-wrapper">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="list-item"
-          >
+          <div data-aos="fade-up" className="list-item">
             <h4 className="title">{t("services.title")}</h4>
             <ul className="list">
               <li className="text">⚙️ {t("services.items.0")}</li>
@@ -40,11 +36,7 @@ const Services = () => {
               <li className="text">⚙️ {t("services.items.4")}</li>
             </ul>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="list-item"
-          >
+          <div data-aos="fade-up" className="list-item">
             <h4 className="title">{t("services.why_us_title")}</h4>
             <ul className="list">
               <li className="text">⚙️ {t("services.why_us.0")}</li>

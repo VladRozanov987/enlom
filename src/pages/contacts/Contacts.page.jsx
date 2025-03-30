@@ -16,8 +16,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Contacts = () => {
-  const { t } = useTranslation();
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -25,12 +23,14 @@ const Contacts = () => {
     });
   }, []);
 
+  const { t } = useTranslation();
+
   return (
     <>
       <StyledContacts>
         <div className="container">
           <div className="contacts-title">
-            <h1 data-aos="fade-left" data-aos-duration="1000">
+            <h1 data-aos="fade-left">
               {" "}
               <span>{t("contacts.our")}</span> {t("contacts.title")}
             </h1>

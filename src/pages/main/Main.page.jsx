@@ -32,7 +32,7 @@ const Main = () => {
       <StyledMain>
         <div className="container">
           <div className="main-title">
-            <h1 data-aos="fade-left" data-aos-duration="1000">
+            <h1 data-aos="fade-left">
               {" "}
               <span>{t("main.together")}</span> {t("main.reliability")}
             </h1>
