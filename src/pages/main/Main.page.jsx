@@ -32,7 +32,7 @@ const Main = () => {
       <StyledMain>
         <div className="container">
           <div className="main-title">
-            <h1 data-aos="fade-left">
+            <h1 data-aos="fade-up">
               {" "}
               <span>{t("main.together")}</span> {t("main.reliability")}
             </h1>
@@ -51,7 +51,7 @@ const StyledMain = styled.div`
   padding-top: 120px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${mainBg});
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
 

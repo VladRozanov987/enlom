@@ -30,7 +30,7 @@ const Contacts = () => {
       <StyledContacts>
         <div className="container">
           <div className="contacts-title">
-            <h1 data-aos="fade-left">
+            <h1 data-aos="fade-up">
               {" "}
               <span>{t("contacts.our")}</span> {t("contacts.title")}
             </h1>
@@ -47,7 +47,7 @@ const StyledContacts = styled.div`
   padding-top: 120px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${mainBg});
-  background-position: center center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
 

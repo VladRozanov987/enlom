@@ -32,7 +32,7 @@ const Header = () => {
 
 const StyledHeader = styled.header`
   width: 100%;
-  padding: 20px 0;
+  padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
