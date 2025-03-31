@@ -57,7 +57,7 @@ const StyledMain = styled.div`
 
   .main-title {
     position: absolute;
-    top: 65%;
+    top: 60%;
     max-width: 500px;
 
     span {
@@ -68,6 +68,9 @@ const StyledMain = styled.div`
   @media screen and (max-width: 928px) {
     h1 {
       font-size: 44px;
+    }
+    .main-title {
+      top: 75%;
     }
   }
 `;
