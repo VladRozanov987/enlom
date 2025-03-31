@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Rubik', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 65px;
+    font-size: 60px;
     line-height: 120%;
     color: #ffffff;
   }

@@ -51,13 +51,13 @@ const StyledMain = styled.div`
   padding-top: 120px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${mainBg});
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 
   .main-title {
     position: absolute;
-    top: 60%;
+    top: 55%;
     max-width: 500px;
 
     span {
@@ -70,7 +70,7 @@ const StyledMain = styled.div`
       font-size: 44px;
     }
     .main-title {
-      top: 75%;
+      top: 70%;
     }
   }
 `;
